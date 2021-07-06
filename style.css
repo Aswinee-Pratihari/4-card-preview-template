@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+:root{
+    --red:hsl(0, 78%, 62%);
+    --cyan:hsl(180, 62%, 55%);
+    --orange:hsl(34, 97%, 64%);
+    --blue:hsl(212, 86%, 64%);
+    --dark-blue:hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --grey:hsl(0, 0%, 98%);
+}
+
+section{
+    background-color: var(--grey);
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 19rem;
+    height: 90%;
+}
+.container .heading{
+    text-align: center;
+}
+.container .heading span{
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+.container .heading h1{
+    color: var(--dark-blue);
+}
+.container  p{
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.container .part1{
+   border-top: 3pt solid var(--cyan);
+border-radius: 5px;
+   box-shadow: 0 4px 30px 0px var(--grayish-blue);
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    width: 19rem;
+    height: 12rem;
+}
+#h1{
+    font-size: 16px;
+}
+.img{
+  margin-left: 13rem;
+  
+}
+.container .part1 .content{
+    padding: 1rem;
+}
+
+.container .part2 .card1{
+    border-top: 3pt solid var(--red);
+    box-shadow: 0 4px 30px 0px var(--grayish-blue);
+     margin-bottom: 2rem;
+     width: 19rem;
+     height: 12rem;
+     border-radius: 5px;
+ }
+
+.container .part2 .card1 .content{
+    padding: 1rem;
+}
+
+.container .part2 .card2{
+    border-top: 3pt solid var(--orange);
+    box-shadow: 0 4px 30px 0px var(--grayish-blue);
+    width: 19rem;
+    height: 12rem;
+     margin-bottom: 3rem;
+     border-radius: 5px;
+ }
+
+.container .part2 .card2 .content{
+    padding: 1rem;
+}
+.container .part3{
+    border-top: 3pt solid var(--blue);
+    box-shadow: 0 4px 30px 0px var(--grayish-blue);
+    width: 19rem;
+    height: 12rem;
+    border-radius: 5px;
+ }
+ .container .part3 .content{
+    padding: 1rem;
+}
+
+@media screen and (min-width:900px) {
+    section{
+        height: 100vh;
+    }
+    .container{
+      
+height: 100vh;
+margin-top: 0px;
+width: 60rem;
+    }
+    .container .heading span{
+
+        font-size: 1.7rem;
+    }
+    .container .heading h1{
+        font-size: 2rem;
+    }
+    .container .heading p{
+padding: 0 13rem;
+    }
+    .card{
+        display: flex;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+  
+    .container .part3{
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+        margin-left: 2rem;
+    }
+    .container .part1{
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+        margin-right: 2rem;
+    }
+}
